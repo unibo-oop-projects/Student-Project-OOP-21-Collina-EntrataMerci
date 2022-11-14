@@ -6,55 +6,56 @@ public class StorageController {
 	private static final String FILE_FORNITORI = "fornitori.json";
 	private static final String FILE_LOCAZIONE = "locazioni.json";
 	private static final String FILE_ORDINI = "ordini.json";
-	private static final String APP_PATH = System.getProperty("user.dir");
+	private static final String APP_PATH = "";
+	private static final String SEP = System.getProperty("file.separator");
 	
 	// ==============================PER DEBUG DA IDE=================================
-//	private static final String ARTICOLI_PATH = APP_PATH + "\\stored\\" + FILE_ARTICOLI;
-//	private static final String AREE_PATH = APP_PATH + "\\stored\\" + FILE_AREE;
-//	private static final String FORNITORI_PATH = APP_PATH + "\\stored\\" + FILE_FORNITORI;
-//	private static final String LOCAZIONE_PATH = APP_PATH + "\\stored\\" + FILE_LOCAZIONE;
-//	private static final String ORDINI_PATH = APP_PATH + "\\stored\\" + FILE_ORDINI;
+//	private static final String ARTICOLI_PATH = APP_PATH + SEP + "stored" + SEP + FILE_ARTICOLI;
+//	private static final String AREE_PATH = APP_PATH + SEP + "stored" + SEP + FILE_AREE;
+//	private static final String FORNITORI_PATH = APP_PATH + SEP + "stored" + SEP + FILE_FORNITORI;
+//	private static final String LOCAZIONE_PATH = APP_PATH + SEP + "stored" + SEP + FILE_LOCAZIONE;
+//	private static final String ORDINI_PATH = APP_PATH + SEP + "stored" + SEP + FILE_ORDINI;
 //	private static final String ORDINE_FXML_PATH = APP_PATH
-//			+ "\\src\\main\\resources\\magazzino\\entratamerci\\StoricoOrdini.fxml";
+//			+ SEP + "srcmain" + SEP + "resources" + SEP + "magazzino" + SEP + "entratamerci" + SEP + "StoricoOrdini.fxml";
 //	private static final String FILE_MENU = APP_PATH
-//			+ "\\src\\main\\resources\\magazzino\\entratamerci\\Menu.fxml";
+//			+ SEP + "src" + SEP + "main" + SEP + "resources" + SEP + "magazzino" + SEP + "entratamerci" + SEP + "Menu.fxml";
 //	private static final String AGG_ORDINE_FXML_PATH = APP_PATH
-//			+ "\\src\\main\\resources\\magazzino\\entratamerci\\InserisciOrdine.fxml";
+//			+ SEP + "src" + SEP + "main" + SEP + "resources" + SEP + "magazzino" + SEP + "entratamerci" + SEP + "InserisciOrdine.fxml";
 //	private  static final String GIACENZA_PATH = APP_PATH
-//			+ "\\src\\main\\resources\\magazzino\\entratamerci\\Giacenza.fxml";
+//			+ SEP + "src" + SEP + "main" + SEP + "resources" + SEP + "magazzino" + SEP + "entratamerci" + SEP + "Giacenza.fxml";
 //	private  static final String INSERISCIAGGIORNAARTICOLO_PATH = APP_PATH
-//			+ "\\src\\main\\resources\\magazzino\\entratamerci\\InserisciAggiornaArticolo.fxml";
+//			+ SEP + "src" + SEP + "main" + SEP + "resources" + SEP + "magazzino" + SEP + "entratamerci" + SEP + "InserisciAggiornaArticolo.fxml";
 //	private  static final String INSERISCIAGGIORNAFORNITORE_PATH = APP_PATH
-//			+ "\\src\\main\\resources\\magazzino\\entratamerci\\InserisciAggiornaFornitore.fxml";
+//			+ SEP + "src" + SEP + "main" + SEP + "resources" + SEP + "magazzino" + SEP + "entratamerci" + SEP + "InserisciAggiornaFornitore.fxml";
 //	private static final String ARTICOLI_FXML_PATH = APP_PATH
-//			+ "\\src\\main\\resources\\magazzino\\entratamerci\\AnagraficaArticoli.fxml";
+//			+ SEP + "src" + SEP + "main" + SEP + "resources" + SEP + "magazzino" + SEP + "entratamerci" + SEP + "AnagraficaArticoli.fxml";
 //	private static final String FORNITORI_FXML_PATH = APP_PATH
-//			+ "\\src\\main\\resources\\magazzino\\entratamerci\\AnagraficaFornitori.fxml";
+//			+ SEP + "src" + SEP + "main" + SEP + "resources" + SEP + "magazzino" + SEP + "entratamerci" + SEP + "AnagraficaFornitori.fxml";
 	// ==============================PER DEBUG DA IDE=================================
 	
 	
 	// ==================================PER JAR======================================
-	private static final String ARTICOLI_PATH = APP_PATH + "\\stored\\" + FILE_ARTICOLI;
-	private static final String AREE_PATH = APP_PATH + "\\stored\\" + FILE_AREE;
-	private static final String FORNITORI_PATH = APP_PATH + "\\stored\\" + FILE_FORNITORI;
-	private static final String LOCAZIONE_PATH = APP_PATH + "\\stored\\" + FILE_LOCAZIONE;
-	private static final String ORDINI_PATH = APP_PATH + "\\stored\\" + FILE_ORDINI;
+	private static final String ARTICOLI_PATH = APP_PATH + SEP + "stored" + SEP + FILE_ARTICOLI;
+	private static final String AREE_PATH = APP_PATH + SEP + "stored" + SEP + FILE_AREE;
+	private static final String FORNITORI_PATH = APP_PATH + SEP +"stored" + SEP + FILE_FORNITORI;
+	private static final String LOCAZIONE_PATH = APP_PATH + SEP + "stored" + SEP + FILE_LOCAZIONE;
+	private static final String ORDINI_PATH = APP_PATH + SEP + "stored" + SEP + FILE_ORDINI;
 	private static final String ORDINE_FXML_PATH = APP_PATH
-			+ "\\fxml\\StoricoOrdini.fxml";
+			+ SEP + "fxml" + SEP + "StoricoOrdini.fxml";
 	private static final String FILE_MENU = APP_PATH
-			+ "\\fxml\\Menu.fxml";
+			+ SEP + "fxml" + SEP + "Menu.fxml";
 	private static final String AGG_ORDINE_FXML_PATH = APP_PATH
-			+ "\\fxml\\InserisciOrdine.fxml";
+			+ SEP + "fxml" + SEP + "InserisciOrdine.fxml";
 	private  static final String GIACENZA_PATH = APP_PATH
-			+ "\\fxml\\Giacenza.fxml";
+			+ SEP + "fxml" + SEP + "Giacenza.fxml";
 	private  static final String INSERISCIAGGIORNAARTICOLO_PATH = APP_PATH
-			+ "\\fxml\\InserisciAggiornaArticolo.fxml";
+			+ SEP + "fxml" + SEP + "InserisciAggiornaArticolo.fxml";
 	private static final String ARTICOLI_FXML_PATH = APP_PATH
-			+ "\\fxml\\AnagraficaArticoli.fxml";
+			+ SEP + "fxml" + SEP + "AnagraficaArticoli.fxml";
 	private static final String FORNITORI_FXML_PATH = APP_PATH
-			+ "\\fxml\\AnagraficaFornitori.fxml";
+			+ SEP + "fxml" + SEP + "AnagraficaFornitori.fxml";
 	private  static final String INSERISCIAGGIORNAFORNITORE_PATH = APP_PATH
-			+ "\\fxml\\InserisciAggiornaFornitore.fxml";
+			+ SEP + "fxml" + SEP + "InserisciAggiornaFornitore.fxml";
 	// ==================================PER JAR======================================
 	
 	public static String getFornitoriFxmlPath() {

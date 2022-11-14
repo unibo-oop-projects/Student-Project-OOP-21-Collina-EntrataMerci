@@ -30,8 +30,8 @@ public class MainMenuClass extends Application {
 	            // Load root layout from fxml file.
 	            FXMLLoader loader = new FXMLLoader();
 	            		
-	            loader.setLocation(new File(StorageController.getFileMenu()).toURI().toURL());
-				//loader.setLocation(MainMenuClass.class.getResource("/Menu.fxml"));
+	            //loader.setLocation(new File(StorageController.getFileMenu()).toURI().toURL());
+		    loader.setLocation(MainMenuClass.class.getResource(StorageController.getFileMenu()));
 	            rootLayout =  loader.load();
 	            
 	            // Show the scene containing the root layout.
